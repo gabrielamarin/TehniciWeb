@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Project 1</title> 
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"> <!--tell the browser to think at this page as being responsive-->
+    </head>
+    <body class="body">
+        <header class="mainHeader">
+            <h1> Contact us for some awesome trip ideas </h1>
+            <nav> 
+                <ul>
+                    <li><a class="menu-item menu-item-active" href="home.html"> Home </a></li>
+                    <li><a class="menu-item" href="about.html"> About </a></li> 
+                    <li><a class="menu-item" href="portfolio.html"> Portfolio </a></li> 
+                    <li class="active"><a class="menu-item" href="contact.html"> Contact </a></li>   
+                </ul>
+            </nav>
+        </header>
+        
+        <div id="form-main">
+            <div id="form-div">
+              <form class="form" id="form1">
+                
+                <p class="name">
+                  <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+                </p>
+                
+                <p class="email">
+                  <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+                </p>
+                
+                <p class="text">
+                  <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+                </p>
+                
+                
+                <div class="submit">
+                  <input type="submit" value="SEND" id="button-blue"/>
+                  <div class="ease"></div>
+                </div>
+              </form>
+            </div>
+        </div>
+        <footer class="mainFooter">
+            <p>Copyright &copy; Marin Gabriela-Mihaela</p>
+        </footer>
+    </body>
+</html>
