@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Project 1</title> 
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <link rel="stylesheet" href="style-form.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <body class="body">
+        <header class="mainHeader">
+            <h1> Contact us for some awesome trip ideas </h1>
+            <nav> 
+                <ul>
+                    <li><a class="menu-item menu-item-active" href="home.html"> Home </a></li>
+                    <li><a class="menu-item" href="about.html"> About </a></li> 
+                    <li><a class="menu-item" href="portfolio.html"> Portfolio </a></li> 
+                    <li><a class="menu-item" href="game.html"> Game </a></li>
+                    <li class="active"><a class="menu-item" href="contact.html"> Contact </a></li>   
+                </ul>
+            </nav>
+        </header>
+        
+        <div id="form-messages"></div>
+        <div id="form-div">
+            <form class="form" id="ajax-contact" method="post" action="mailer.php">
+                <div class="field"><p class="name">
+                    <input id="name" name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+                </p></div>
+                
+                <div class="field"><p class="email">
+                    <input id="email" name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+                </p></div>
+                
+                <div class="field"><p class="text">
+                    <textarea id="message" name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+                </p></div>
+                
+                <div class="field"><div class="submit">
+                    <input type="submit" value="SEND" id="button-blue"/>
+                    <div class="ease"></div></div>
+                </div>
+            </form>
+        </div>
+        <script src="jquery-2.1.0.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
